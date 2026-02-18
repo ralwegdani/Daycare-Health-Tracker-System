@@ -1,20 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Nadaa
- */
 public class ChildHealthManager {
     
-    // inner class (this class holds the child's health information)
+        // Inner class (this class holds the child's health information)
         public static class ChildHealthData {
         private String childId;
         private String notes;
 
-        //creates a new health record
+        // Creates a new health record
         public ChildHealthData(String childId, String notes) {
             this.childId = childId;
             this.notes = notes;
@@ -29,9 +20,9 @@ public class ChildHealthManager {
         }
     }
 
-   // inner class(This class simulates saving data to a database)
+     // Inner class (This class simulates saving data to a database)
     public static class Database {
-        //tries to save the data
+        // Tries to save the data
         public boolean storeHealthInfo(ChildHealthData data) {
             if (data == null || data.getChildId() == null || data.getChildId().isEmpty()) {
                 return false; 
@@ -41,7 +32,7 @@ public class ChildHealthManager {
         }
     }
 
-    // inner class (this class simulates sending a notification to the teacher)
+    // Inner class (this class simulates sending a notification to the teacher)
     public static class NotificationService {
         private String lastNotification = null;
 
@@ -56,18 +47,18 @@ public class ChildHealthManager {
         }
     }
 
-    //main Manager Class
+    // Main Manager Class
 
     private Database database;
     private NotificationService notificationService;
 
-    // connects the manager with database and notification service
+    // Connects the manager with database and notification service
     public ChildHealthManager(Database database, NotificationService notificationService) {
         this.database = database;
         this.notificationService = notificationService;
     }
 
-    //main function that adds health info anf return simple massge back to parent
+    // Main function that adds health info anf return simple massge back to parent
     public String addHealthInfo(ChildHealthData data) {
 
         boolean saved = database.storeHealthInfo(data);
