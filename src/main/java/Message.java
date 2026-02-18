@@ -1,7 +1,3 @@
-// Name: Reham Alwegdani
-// ID: 2308074
-// Section: EAR
-// Group: 2
 
 public class Message {
     String content;
