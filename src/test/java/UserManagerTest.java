@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 import org.junit.Before;
 
 import org.junit.Test;
@@ -9,10 +6,6 @@ import static org.junit.Assert.*;
 import java.io.File;
 import java.net.URL;
 import java.nio.file.Files;
-/**
- *
- * @author la690
- */
 public class UserManagerTest {
     private File tempInput;// Temporary file used as the input source for testing
     private File tempOutput; // Temporary file used as the output destination for saving changes
