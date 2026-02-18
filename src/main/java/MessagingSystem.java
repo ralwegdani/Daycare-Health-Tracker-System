@@ -1,7 +1,3 @@
-// Name: Reham Alwegdani
-// ID: 2308074
-// Section: EAR
-// Group: 2
 
 import java.util.ArrayList;
 import java.util.List;
