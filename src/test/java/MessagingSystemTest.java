@@ -1,7 +1,4 @@
-// Name: Reham Alwegdani
-// ID: 2308074
-// Section: EAR
-// Group: 2
+
 import org.junit.Before;
 import org.junit.Test;
 import java.util.List;
