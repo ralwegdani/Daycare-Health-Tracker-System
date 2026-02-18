@@ -1,8 +1,4 @@
-/* // test change
 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -184,7 +180,6 @@ public class Main {
         ChildReport.writeReport();
 
         // -----------------Communicate with Parent/Teacher-----------------
-        // Reham's code
         Database database = new Database();
         MessagingSystem system = new MessagingSystem(database);
 
